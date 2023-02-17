@@ -126,7 +126,7 @@ while True:
     weights = parse_message(data)
 
     if time.time() % 1 < 0.1:
-      for i in range(len(weights)):
+      for i in range(4, len(weights)):
         if i % 10 == 0:
           print('')
         print('%s=%.2f' % (blend_shapes[i], weights[i]), end='   ')
